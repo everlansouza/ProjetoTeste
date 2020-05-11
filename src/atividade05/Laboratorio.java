@@ -6,7 +6,7 @@ public class Laboratorio extends Sala{
     private final String sistemaOperacional;
 
     public Laboratorio(int qtComputador, int qtAlunoPorPC, int memRAM, int hd, float veloxidadeCPU, String sistemaOperacional, int num, int capacidade, float larfura, boolean dataShow, boolean caixaSom) {
-        super(num, capacidade, larfura, dataShow, caixaSom);
+        super(num, larfura, dataShow, caixaSom);
         this.qtComputador = qtComputador;
         this.qtAlunoPorPC = qtAlunoPorPC;
         this.memRAM = memRAM;
