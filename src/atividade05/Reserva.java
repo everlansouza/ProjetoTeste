@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade05;
-
-/**
- *
- * @author everl
- */
 public class Reserva {
+    
+    private final Data data;
+    private final Sala sala;
+    private final Turma turma;
+    private final Funcionario funcionatio;
+    private final Professor professor;
+    private final Hora horarioInicio, horarioFim;
+
+    public Reserva(Data data, Sala sala, Turma turma, Funcionario funcionatio, Professor professor, Hora horarioInicio, Hora horarioFim) {
+        this.data = data;
+        this.sala = sala;
+        this.turma = turma;
+        this.funcionatio = funcionatio;
+        this.professor = professor;
+        this.horarioInicio = horarioInicio;
+        this.horarioFim = horarioFim;
+    }
+    
     
 }

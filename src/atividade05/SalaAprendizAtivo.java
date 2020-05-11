@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade05;
+public class SalaAprendizAtivo extends Sala{
 
-/**
- *
- * @author everl
- */
-public class SalaAprendizAtivo {
+    private final int qtMesa, qtCadeira, qtPontoLuz;
+
+    public SalaAprendizAtivo(int qtMesa, int qtCadeira, int qtPontoLuz, int num, int capacidade, float larfura, boolean dataShow, boolean caixaSom) {
+        super(num, capacidade, larfura, dataShow, caixaSom);
+        this.qtMesa = qtMesa;
+        this.qtCadeira = qtCadeira;
+        this.qtPontoLuz = qtPontoLuz;
+    }
+    
     
 }

@@ -1,8 +1,8 @@
 package atividade05;
 public class Funcionario {
     
-    private int matricula,telefone;
-    private String nome, email;
+    private final int matricula,telefone;
+    private final String nome, email;
 
     public Funcionario(int matricula, int telefone, String nome, String email) {
         this.matricula = matricula;

@@ -1,7 +1,7 @@
 package atividade05;
 public class Data {
     
-    private int dia, mes, ano;
+    private final int dia, mes, ano;
     private String dataFormatada;
     
     public Data(int dia,int mes,int ano){

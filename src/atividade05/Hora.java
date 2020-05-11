@@ -1,7 +1,7 @@
 package atividade05;
 public class Hora {
 
-    private int hr, min;
+    private final int hr, min;
     private String formatarHora;
     
     public Hora(int hr, int min) {

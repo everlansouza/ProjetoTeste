@@ -9,7 +9,7 @@ package atividade05;
  *
  * @author everl
  */
-public class Teste {
+public class TesteReserva {
 
     /**
      * @param args the command line arguments
