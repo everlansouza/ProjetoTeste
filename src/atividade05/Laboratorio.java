@@ -9,6 +9,6 @@ package atividade05;
  *
  * @author everl
  */
-public class Laboratorio {
+public class Laboratorio extends Sala{
     
 }

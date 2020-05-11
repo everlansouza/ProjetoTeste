@@ -3,4 +3,28 @@ public class Funcionario {
     
     private int matricula,telefone;
     private String nome, email;
+
+    public Funcionario(int matricula, int telefone, String nome, String email) {
+        this.matricula = matricula;
+        this.telefone = telefone;
+        this.nome = nome;
+        this.email = email;
+    }
+    
+    public String getNome(){
+        return this.nome;
+    }
+    
+    public String getEmail(){
+        return this.email;
+    }
+    
+    public int getMatricula(){
+        return this.matricula;
+    }
+    
+    public int getTelefone(){
+        return this.telefone;
+    }
+    
 }
