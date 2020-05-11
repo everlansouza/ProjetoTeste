@@ -1,13 +1,21 @@
 package atividade05;
 public class Sala {
 
-    private final int num, capacidade;
+    private final int num; 
+    private int capacidade = 0;
     private final float largura;
     private final boolean dataShow, caixaSom;
 
     public Sala(int num, int capacidade, float larfura, boolean dataShow, boolean caixaSom) {
         this.num = num;
         this.capacidade = capacidade;
+        this.largura = larfura;
+        this.dataShow = dataShow;
+        this.caixaSom = caixaSom;
+    }
+    
+    public Sala(int num, float larfura, boolean dataShow, boolean caixaSom) {
+        this.num = num;
         this.largura = larfura;
         this.dataShow = dataShow;
         this.caixaSom = caixaSom;
