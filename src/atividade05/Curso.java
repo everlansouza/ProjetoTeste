@@ -8,4 +8,13 @@ public class Curso {
         this.codigo = codigo;
     }
     
+    //Saidade de dados
+    public String getNome(){
+        return this.nome;
+    }
+    
+    public String getCodigo(){
+        return this.codigo;
+    }
+    
 }
