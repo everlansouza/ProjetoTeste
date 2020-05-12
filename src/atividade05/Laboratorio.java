@@ -2,7 +2,7 @@ package atividade05;
 public class Laboratorio extends Sala{
 
     private final int qtComputador, qtAlunoPorPC, memRAM, hd;
-    private final float veloxidadeCPU;
+    private final float velocidadeCPU;
     private final String sistemaOperacional;
 
     public Laboratorio(int qtComputador, int qtAlunoPorPC, int memRAM, int hd, float veloxidadeCPU, String sistemaOperacional, int num, int capacidade, float larfura, boolean dataShow, boolean caixaSom) {
@@ -11,7 +11,7 @@ public class Laboratorio extends Sala{
         this.qtAlunoPorPC = qtAlunoPorPC;
         this.memRAM = memRAM;
         this.hd = hd;
-        this.veloxidadeCPU = veloxidadeCPU;
+        this.velocidadeCPU = veloxidadeCPU;
         this.sistemaOperacional = sistemaOperacional;
     }
     
@@ -49,7 +49,7 @@ public class Laboratorio extends Sala{
      * @return the veloxidadeCPU
      */
     public float getVeloxidadeCPU() {
-        return veloxidadeCPU;
+        return velocidadeCPU;
     }
 
     /**
