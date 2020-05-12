@@ -9,6 +9,25 @@ public class SalaAprendizAtivo extends Sala{
         this.qtCadeira = qtCadeira;
         this.qtPontoLuz = qtPontoLuz;
     }
-    
-    
+
+    /**
+     * @return the qtMesa
+     */
+    public int getQtMesa() {
+        return qtMesa;
+    }
+
+    /**
+     * @return the qtCadeira
+     */
+    public int getQtCadeira() {
+        return qtCadeira;
+    }
+
+    /**
+     * @return the qtPontoLuz
+     */
+    public int getQtPontoLuz() {
+        return qtPontoLuz;
+    }
 }
