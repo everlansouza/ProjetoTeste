@@ -15,5 +15,49 @@ public class Laboratorio extends Sala{
         this.sistemaOperacional = sistemaOperacional;
     }
     
+    //Saida de dados
+
+    /**
+     * @return the qtComputador
+     */
+    public int getQtComputador() {
+        return qtComputador;
+    }
+
+    /**
+     * @return the qtAlunoPorPC
+     */
+    public int getQtAlunoPorPC() {
+        return qtAlunoPorPC;
+    }
+
+    /**
+     * @return the memRAM
+     */
+    public int getMemRAM() {
+        return memRAM;
+    }
+
+    /**
+     * @return the hd
+     */
+    public int getHd() {
+        return hd;
+    }
+
+    /**
+     * @return the veloxidadeCPU
+     */
+    public float getVeloxidadeCPU() {
+        return veloxidadeCPU;
+    }
+
+    /**
+     * @return the sistemaOperacional
+     */
+    public String getSistemaOperacional() {
+        return sistemaOperacional;
+    }
+    
     
 }
