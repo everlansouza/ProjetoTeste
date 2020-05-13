@@ -1,21 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade05;
-
-/**
- *
- * @author everl
- */
 public class TesteReserva {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        //Teste1
+        Sala s1 = new Sala(12, 60, 45, 10.0f, 11.10f, true, true);
+        s1.calcCapacidade();
+        System.out.println("Vagas na Sala 12: " + s1.getVagas());
+        
+        //Teste2
+        Sala s2 = new Sala(16, 60, 61, 10.0f, 11.10f, true, true);
+        s2.calcCapacidade();
+        System.out.println("Vagas na Sala 16: " + s2.getVagas());
+        
+        //Teste3
+        Laboratorio L1 = new Laboratorio(30, 1, 45, 4, 500, 2.5f, "Windows 10", 12, 10.0f, 11.10f, true, true);
+        L1.calcCapacidade();
+        System.out.println("Vagas Laboratorio: " + L1.getVagas());
+        
+        //Teste4
+        Laboratorio L2 = new Laboratorio(30, 2, 58, 4, 500, 2.5f, "Windows 10", 12, 10.0f, 11.10f, true, true);
+        L2.calcCapacidade();
+        System.out.println("Vagas Laboratorio: " + L2.getVagas());
+        
+        //Teste5
+        SalaAprendizAtivo saa = new SalaAprendizAtivo(10, 6, 15, 37, 45, 10.0f, 11.10f, true, true);
+        saa.calcCapacidade();
+        System.out.println("Vagas Sala Aprendiz Ativo: " + saa.getVagas());
+        
+        
+        
     }
     
 }

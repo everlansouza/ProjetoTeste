@@ -1,22 +1,33 @@
 package atividade05;
 public class Laboratorio extends Sala{
 
-    private final int qtComputador, qtAlunoPorPC, memRAM, hd;
+    private final int qtComputador, qtAlunoPorPC, memRAM, hd; 
+    private int teste;
     private final float velocidadeCPU;
     private final String sistemaOperacional;
 
-    public Laboratorio(int qtComputador, int qtAlunoPorPC, int memRAM, int hd, float veloxidadeCPU, String sistemaOperacional, int num, int capacidade, float larfura, boolean dataShow, boolean caixaSom) {
-        super(num, larfura, dataShow, caixaSom);
+    public Laboratorio(int qtComputador, int qtAlunoPorPC, int qtAluno, 
+            int memRAM, int hd, float velocidadeCPU, String sistemaOperacional, int num, float larfura,
+            float profundidade, boolean dataShow, boolean caixaSom) {
+        super(num,qtAluno, larfura, profundidade, dataShow, caixaSom);
         this.qtComputador = qtComputador;
         this.qtAlunoPorPC = qtAlunoPorPC;
         this.memRAM = memRAM;
         this.hd = hd;
-        this.velocidadeCPU = veloxidadeCPU;
+        this.velocidadeCPU = velocidadeCPU;
         this.sistemaOperacional = sistemaOperacional;
     }
     
-    //Saida de dados
+    
+    @Override
+    public void calcCapacidade(){
+        super.vagas = (this.qtComputador * this.qtAlunoPorPC)- super.qtAluno; 
+    }
 
+    public int getTeste() {
+        return this.teste;
+    }
+    
     /**
      * @return the qtComputador
      */
