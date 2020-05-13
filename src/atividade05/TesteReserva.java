@@ -26,8 +26,29 @@ public class TesteReserva {
         SalaAprendizAtivo saa = new SalaAprendizAtivo(10, 6, 15, 37, 45, 10.0f, 11.10f, true, true);
         saa.calcCapacidade();
         System.out.println("Vagas Sala Aprendiz Ativo: " + saa.getVagas());
+        System.out.println("\n\n");
         
+        //instanciar as outras casses
+        Data d = new Data(14,05,2020);
+        d.foratarData();
         
+        Curso c = new Curso("ADS","ADS04B");
+        
+        Turma t = new Turma(c, "Noturno", "4°", 45);
+        
+        Funcionario f = new Funcionario(3131, 934478521, "José", "jose@gmail");
+        
+        Professor p = new Professor("POO", c, 1313, 988883333, "Vinicius", "vinicius@gmail");
+        
+        Hora inicio = new Hora(20, 50);
+        inicio.formatarHora();
+
+        Hora fim = new Hora(22, 20);
+        fim.formatarHora();
+        
+        Reserva r = new Reserva(d, s1, c, t, f, p, inicio, fim);
+        //Informações da Reserva
+        System.out.println(r.informaçõesReserva());
         
     }
     
