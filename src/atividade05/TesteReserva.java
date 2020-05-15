@@ -30,7 +30,6 @@ public class TesteReserva {
         
         //instanciar as outras casses
         Data d = new Data(14,05,2020);
-        d.foratarData();
         
         Curso c = new Curso("ADS","ADS04B");
         
@@ -41,15 +40,12 @@ public class TesteReserva {
         Professor p = new Professor("POO", c, 1313, 988883333, "Vinicius", "vinicius@gmail");
         
         Hora inicio = new Hora(20, 50);
-        inicio.formatarHora();
-
+        
         Hora fim = new Hora(22, 20);
-        fim.formatarHora();
         
         Reserva r = new Reserva(d, s1, c, t, f, p, inicio, fim);
         //Informações da Reserva
         System.out.println(r.informaçõesReserva());
-        
     }
     
 }
